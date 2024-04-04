@@ -2,7 +2,7 @@ The goal of this project was to develop a robust backend API for an e-learning p
 
 User endpoints
 
--POST/user/Registration this endpoint to create a new user and send a token.
+-POST/user/Registration this endpoint to create a new user and send a token. 
 -POST//user/login login endpoint.
 -GET/user this endpoint to fetch data from the database and show.
 -PUT/user this endpoint to update the user profile and this endpoint takes the user ID.
