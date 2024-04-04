@@ -2,14 +2,15 @@ The goal of this project was to develop a robust backend API for an e-learning p
 
 User endpoints
 
--POST/user/Registration this endpoint to create a new user and send a token. 
--POST//user/login login endpoint.
--GET/user this endpoint to fetch data from the database and show.
--PUT/user this endpoint to update the user profile and this endpoint takes the user ID.
+    -POST/user/Registration this endpoint to create a new user and send a token.
+    -POST//user/login login endpoint.
+    -GET/user this endpoint to fetch data from the database and show.
+    -PUT/user this endpoint to update the user profile and this endpoint takes the user ID.
 
 Couser endpoints
 
--GET/course this endpoint to fetch data form database and filter option added in this route.
--POST/course this endpoint to create a new couser and only superadmin access this route.
--PUT/course this endpoint to update the course data and only superadmin perform this operation.
--DELETE/course this endpoint to delete the course and only superadmin access this route.
+    -GET/course this endpoint to fetch data form database and filter option added in this route.
+    -POST/course this endpoint to create a new couser and only superadmin access this route.
+    -PUT/course this endpoint to update the course data and only superadmin perform this operation.
+    -DELETE/course this endpoint to delete the course and only superadmin access this route.
+
