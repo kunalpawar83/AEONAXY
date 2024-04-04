@@ -3,19 +3,19 @@ const Course = require('../models/couseModel.js');
 const User = require('../models/userModel.js');
 const {jwtAuthMiddleware,generateToken} = require('../utils/jwt.js');
 const  logger = require('../utils/logger.js');
+const APIFeatures = require('../utils/apiFeature.js');
 
 const router = express.Router();
 
 // GET  ROUTES TO GET DATA
 router.get('/',async(req,res)=>{
     try{
-        // BULD QUERY
-        const queryObj = { ...req.query};
-        const excludefields =['page','sort','limit','fields'];
-        excludefields.forEach(el => delete queryObj[el]);
-
-      const query =  Course.find(queryObj);
-      const data  = await query;
+       const features = new APIFeatures(Course.find(),req.query)
+       .filter()
+       .sort()
+       .limitFields()
+       .paginate();
+      const data  = await features.query;
       console.log('data fetched');
       res.status(200).json({
           status:"success",
