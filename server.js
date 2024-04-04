@@ -1,11 +1,11 @@
 const express = require('express');
 require('dotenv').config();
 const bodyParser = require('body-parser');
-const  logger = require('./logger.js');
+const  logger = require('./utils/logger.js');
 
 
 const app = express();
-const db  = require('./db.js');
+const db  = require('./utils/db.js');
 const User = require('./models/userModel.js');
 
 

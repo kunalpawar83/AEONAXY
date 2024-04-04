@@ -26,3 +26,16 @@
 {"level":"info","message":"GET /course?duration=8","timestamp":"2024-04-03T12:18:00.366Z"}
 {"level":"info","message":"POST /course","timestamp":"2024-04-03T12:19:32.353Z"}
 {"level":"info","message":"GET /course?duration=6","timestamp":"2024-04-03T12:19:52.065Z"}
+{"level":"info","message":"GET /course?duration=6&page%20=2","timestamp":"2024-04-04T01:43:09.704Z"}
+{"level":"info","message":"GET /course?duration=6&page%20=2","timestamp":"2024-04-04T01:44:01.510Z"}
+{"level":"info","message":"GET /course?duration=6&page%20=2","timestamp":"2024-04-04T01:44:03.173Z"}
+{"level":"info","message":"GET /course?duration=6&page%20=2","timestamp":"2024-04-04T01:45:37.028Z"}
+{"level":"info","message":"GET /course?duration=6&page%20=2","timestamp":"2024-04-04T01:45:38.032Z"}
+{"level":"info","message":"GET /course?duration=6&page%20=2","timestamp":"2024-04-04T01:46:14.168Z"}
+{"level":"info","message":"GET /course?duration=6&page%20=2","timestamp":"2024-04-04T01:46:15.533Z"}
+{"level":"info","message":"GET /course?duration=6&page%20=2","timestamp":"2024-04-04T01:49:11.601Z"}
+{"level":"info","message":"GET /course?duration=6&page%20=2","timestamp":"2024-04-04T01:49:12.463Z"}
+{"level":"info","message":"GET /course?duration=6&sort=2","timestamp":"2024-04-04T01:49:33.138Z"}
+{"level":"info","message":"GET /course?duration=6&page=2","timestamp":"2024-04-04T01:49:42.655Z"}
+{"level":"info","message":"GET /course?duration=6&page=2","timestamp":"2024-04-04T01:49:58.145Z"}
+{"level":"info","message":"GET /course?duration=6&page=2","timestamp":"2024-04-04T02:02:24.557Z"}

@@ -1,15 +1,21 @@
 const express = require('express');
 const Course = require('../models/couseModel.js');
 const User = require('../models/userModel.js');
-const {jwtAuthMiddleware,generateToken} = require('../jwt.js');
-const  logger = require('../logger.js');
+const {jwtAuthMiddleware,generateToken} = require('../utils/jwt.js');
+const  logger = require('../utils/logger.js');
 
 const router = express.Router();
 
 // GET  ROUTES TO GET DATA
 router.get('/',async(req,res)=>{
     try{
-      const data = await Course.find(req.query);
+        // BULD QUERY
+        const queryObj = { ...req.query};
+        const excludefields =['page','sort','limit','fields'];
+        excludefields.forEach(el => delete queryObj[el]);
+
+      const query =  Course.find(queryObj);
+      const data  = await query;
       console.log('data fetched');
       res.status(200).json({
           status:"success",

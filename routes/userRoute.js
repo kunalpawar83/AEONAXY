@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/userModel.js');
-const {jwtAuthMiddleware,generateToken} = require('../jwt.js');
-const  logger = require('../logger.js');
+const {jwtAuthMiddleware,generateToken} = require('../utils/jwt.js');
+const  logger = require('../utils/logger.js');
 
 router.post('/Registration', async(req,res)=>{
     try{
