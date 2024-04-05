@@ -54,3 +54,42 @@
 {"level":"info","message":"GET /course?duration=6","timestamp":"2024-04-04T03:01:11.946Z"}
 {"level":"info","message":"GET /course?duration=8","timestamp":"2024-04-04T03:01:20.937Z"}
 {"level":"info","message":"GET /course?limit=2&page=2","timestamp":"2024-04-04T03:01:38.620Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-04T04:19:36.468Z"}
+{"level":"error","message":"ValidationError: User validation failed: passwordConfirm: Please confirm your password\n    at Document.invalidate (C:\\coding\\aeonaxy\\node_modules\\mongoose\\lib\\document.js:3200:32)\n    at C:\\coding\\aeonaxy\\node_modules\\mongoose\\lib\\document.js:2993:17\n    at C:\\coding\\aeonaxy\\node_modules\\mongoose\\lib\\schemaType.js:1370:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-04-04T04:19:36.481Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-04T04:19:37.793Z"}
+{"level":"error","message":"ValidationError: User validation failed: passwordConfirm: Please confirm your password\n    at Document.invalidate (C:\\coding\\aeonaxy\\node_modules\\mongoose\\lib\\document.js:3200:32)\n    at C:\\coding\\aeonaxy\\node_modules\\mongoose\\lib\\document.js:2993:17\n    at C:\\coding\\aeonaxy\\node_modules\\mongoose\\lib\\schemaType.js:1370:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-04-04T04:19:37.796Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-04T04:19:54.578Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-04T04:22:06.524Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-04T04:22:16.325Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-04T04:22:20.418Z"}
+{"level":"error","message":"MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"dada11@gmail.com\" }\n    at InsertOneOperation.execute (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\insert.js:48:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async executeOperationAsync (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:106:16)","timestamp":"2024-04-04T04:22:20.468Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-04T04:28:56.803Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T10:59:27.292Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T10:59:31.190Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:00:02.629Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:00:34.478Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:00:38.555Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:00:43.071Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:00:44.737Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:00:45.760Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:00:46.801Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:00:47.827Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:00:48.568Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:00:49.217Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:00:49.997Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:01:16.359Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:01:18.816Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:01:53.077Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:01:54.626Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:01:55.571Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:01:56.896Z"}
+{"level":"info","message":"POST /user/buy","timestamp":"2024-04-04T11:02:04.918Z"}
+{"level":"info","message":"POST /user/buy/660d46c1678ce71b4416e56f","timestamp":"2024-04-04T11:02:54.215Z"}
+{"level":"info","message":"POST /user/buy/660d46c1678ce71b4416e56f","timestamp":"2024-04-04T11:03:29.581Z"}
+{"level":"info","message":"POST /user/buy/660d46c1678ce71b4416e56f","timestamp":"2024-04-04T11:03:30.818Z"}
+{"level":"info","message":"POST /user/buy/660d46c1678ce71b4416e56f","timestamp":"2024-04-04T11:04:01.722Z"}
+{"level":"info","message":"POST /user/buy/660d46c1678ce71b4416e56f","timestamp":"2024-04-04T11:04:16.185Z"}
+{"level":"info","message":"POST /user/buy/660d46c1678ce71b4416e56f","timestamp":"2024-04-04T11:04:17.221Z"}
+{"level":"info","message":"POST /user/buy/660d46c1678ce71b4416e56f","timestamp":"2024-04-04T11:04:26.316Z"}
+{"level":"info","message":"POST /user/buy/660d46c1678ce71b4416e56f","timestamp":"2024-04-05T03:37:59.270Z"}
+{"level":"info","message":"POST /user/buy/660d46c1678ce71b4416e56f","timestamp":"2024-04-05T03:53:57.458Z"}

@@ -3,6 +3,7 @@ const router = express.Router();
 const User = require('../models/userModel.js');
 const {jwtAuthMiddleware,generateToken} = require('../utils/jwt.js');
 const  logger = require('../utils/logger.js');
+const Course = require('../models/couseModel.js');
 
 router.post('/Registration', async(req,res)=>{
     try{
@@ -69,6 +70,32 @@ router.post('/login',async(req,res)=>{
     }
 })
 
+// COURSE BUY 
+
+router.post('/buy/:id',jwtAuthMiddleware,async(req,res)=>{
+     const userdata =  await User.findById(req.user.id);
+     console.log(userdata.course._id);
+     const courseid   = await req.params.id;
+     console.log(courseid);
+     if(userdata.course.id === courseid){
+       return res.status(400).json({
+        status:"fail",
+        error:"you have already buy  this course"
+       })
+     }
+     try{
+          res.status(201).status({
+            status:"success",
+            message:"thank you to buy this couirse"
+          })
+     }catch(err){
+      logger.error(err.stack);
+      res.status(500).json({
+       status:"fail",
+       error:"Internal server error"
+      })
+     }
+})
 
 
 router.get('/',async(req,res)=>{

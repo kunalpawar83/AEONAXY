@@ -1,6 +1,7 @@
 const  mongoose = require('mongoose');
 const validator = require('validator');
 const bcrypt = require('bcrypt');
+const Course  = require('./couseModel.js');
 
 const userSc = new mongoose.Schema({
     name:{
@@ -21,7 +22,8 @@ const userSc = new mongoose.Schema({
     },
     password:{
         type:String,
-        required:[true,'Please provide a password']
+        required:[true,'Please provide a password'],
+        Select:false
     },
     passwordConfirm: {
         type: String,
@@ -34,6 +36,7 @@ const userSc = new mongoose.Schema({
           message: 'Passwords are not the same!'
         }
       },
+      course:Array,
 });
 
 userSc.pre('save', async function(next) {
@@ -56,6 +59,12 @@ userSc.pre('save', async function(next) {
   
 });
 
+userSc.pre('save', async function(next){
+    const coursep  = this.course.map(id => Course.findById(id));
+    this.course = await Promise.all(coursep);
+    next();
+})
+
 userSc.methods.comparePassword = async function(candidatePassword){
    try{
          const isMatch = await bcrypt.compare(candidatePassword,this.password)
@@ -64,6 +73,7 @@ userSc.methods.comparePassword = async function(candidatePassword){
     throw err;
    }
 }
+
 
 const User = mongoose.model('User',userSc);
 module.exports =User;
