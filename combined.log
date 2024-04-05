@@ -93,3 +93,32 @@
 {"level":"info","message":"POST /user/buy/660d46c1678ce71b4416e56f","timestamp":"2024-04-04T11:04:26.316Z"}
 {"level":"info","message":"POST /user/buy/660d46c1678ce71b4416e56f","timestamp":"2024-04-05T03:37:59.270Z"}
 {"level":"info","message":"POST /user/buy/660d46c1678ce71b4416e56f","timestamp":"2024-04-05T03:53:57.458Z"}
+{"level":"info","message":"GET /user","timestamp":"2024-04-05T04:17:59.364Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T04:18:23.548Z"}
+{"level":"error","message":"MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"dada123@gmail.com\" }\n    at InsertOneOperation.execute (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\insert.js:48:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async executeOperationAsync (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:106:16)","timestamp":"2024-04-05T04:18:23.642Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T04:18:24.967Z"}
+{"level":"error","message":"MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"dada123@gmail.com\" }\n    at InsertOneOperation.execute (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\insert.js:48:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async executeOperationAsync (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:106:16)","timestamp":"2024-04-05T04:18:25.032Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T04:18:36.820Z"}
+{"level":"info","message":"GET /user","timestamp":"2024-04-05T04:18:48.035Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T06:27:27.643Z"}
+{"level":"error","message":"TypeError: sendEmail is not a function\n    at C:\\coding\\aeonaxy\\routes\\userRoute.js:23:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-04-05T06:27:27.732Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T06:28:03.110Z"}
+{"level":"error","message":"MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"kunalpawar8319@gmail.com\" }\n    at InsertOneOperation.execute (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\insert.js:48:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async executeOperationAsync (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:106:16)","timestamp":"2024-04-05T06:28:03.205Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T06:28:04.118Z"}
+{"level":"error","message":"MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"kunalpawar8319@gmail.com\" }\n    at InsertOneOperation.execute (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\insert.js:48:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async executeOperationAsync (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:106:16)","timestamp":"2024-04-05T06:28:04.205Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T06:29:07.186Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T07:02:45.258Z"}
+{"level":"error","message":"TypeError: sendEmail is not a function\n    at C:\\coding\\aeonaxy\\routes\\userRoute.js:23:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-04-05T07:02:45.347Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T07:03:01.818Z"}
+{"level":"error","message":"MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"chetan882777@gmail.com\" }\n    at InsertOneOperation.execute (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\insert.js:48:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async executeOperationAsync (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:106:16)","timestamp":"2024-04-05T07:03:01.904Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T07:03:19.530Z"}
+{"level":"error","message":"TypeError: sendEmail is not a function\n    at C:\\coding\\aeonaxy\\routes\\userRoute.js:23:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-04-05T07:03:19.599Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T07:03:20.588Z"}
+{"level":"error","message":"MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"chetan882777@gmail.com\" }\n    at InsertOneOperation.execute (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\insert.js:48:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async executeOperationAsync (C:\\coding\\aeonaxy\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:106:16)","timestamp":"2024-04-05T07:03:20.655Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T07:05:03.247Z"}
+{"level":"error","message":"TypeError: sendEmail is not a function\n    at C:\\coding\\aeonaxy\\routes\\userRoute.js:23:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-04-05T07:05:03.348Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T07:07:06.162Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T07:08:25.588Z"}
+{"level":"info","message":"POST /user/Registration","timestamp":"2024-04-05T07:08:52.831Z"}
+{"level":"info","message":"POST /user/660fa38411f404fd217ee7c9","timestamp":"2024-04-05T07:16:11.422Z"}
+{"level":"info","message":"PUT /user/660fa38411f404fd217ee7c9","timestamp":"2024-04-05T07:16:15.681Z"}

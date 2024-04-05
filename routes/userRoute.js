@@ -4,6 +4,7 @@ const User = require('../models/userModel.js');
 const {jwtAuthMiddleware,generateToken} = require('../utils/jwt.js');
 const  logger = require('../utils/logger.js');
 const Course = require('../models/couseModel.js');
+const { sendEmail }= require('../utils/email.js');
 
 router.post('/Registration', async(req,res)=>{
     try{
@@ -18,7 +19,8 @@ router.post('/Registration', async(req,res)=>{
           id:response.id,
           role:response.role
         }
-
+         console.log(newUser.email);
+        sendEmail(newUser.email,'Welcome to our website', 'Thank you for registering with us!');
         // create token  
         const token  = generateToken(payload);
          res.status(201).json({
@@ -84,6 +86,7 @@ router.post('/buy/:id',jwtAuthMiddleware,async(req,res)=>{
        })
      }
      try{
+      sendEmail(userdata.email,'Welcome to our website', 'Thank you for registering with us!');
           res.status(201).status({
             status:"success",
             message:"thank you to buy this couirse"
@@ -124,7 +127,8 @@ router.put('/:id',jwtAuthMiddleware,async(req,res)=>{
          new:true,
          runValidators:true
        })
-
+       
+       sendEmail(userdata.email,'Welcome to our website', 'Thank you for registering with us!');
        if(!response){
         return res.status(404).json({
             status:"fail",
